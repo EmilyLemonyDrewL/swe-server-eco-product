@@ -7,3 +7,12 @@ class Product(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='products')
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=0)
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
