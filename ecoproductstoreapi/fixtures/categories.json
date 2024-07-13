@@ -1,0 +1,23 @@
+[
+  {
+      "model": "ecoproductstore.category",
+      "pk": 1,
+      "fields": {
+          "name": "Kitchen"
+      }
+  },
+  {
+      "model": "ecoproductstore.category",
+      "pk": 2,
+      "fields": {
+          "name": "Bath"
+      }
+  },
+  {
+      "model": "ecoproductstore.category",
+      "pk": 3,
+      "fields": {
+          "name": "Pet"
+      }
+  }
+]
