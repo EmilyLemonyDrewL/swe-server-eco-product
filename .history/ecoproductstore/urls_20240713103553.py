@@ -24,7 +24,6 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'products', ProductView, 'product')
 router.register(r'categories', CategoryView, 'category')
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
