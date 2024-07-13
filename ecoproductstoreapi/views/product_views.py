@@ -23,7 +23,7 @@ class ProductView(ViewSet):
             name = request.data['name'],
             price = request.data['price'],
             description = request.data['description'],
-            image = request.data['image'],
+            product_image = request.data['image'],
             category = request.data['category']
         )
         serializer = ProductSerializer(product)
@@ -34,7 +34,7 @@ class ProductView(ViewSet):
         product.name = request.data['name']
         product.price = request.data['price']
         product.description = request.data['description']
-        product.image = request.data['image']
+        product.product_image = request.data['image']
         product.category = request.data['category']
         product.save()
         
@@ -66,4 +66,4 @@ class ProductView(ViewSet):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ('id', 'name', 'price', 'description', 'image', 'category')
+        fields = ('id', 'name', 'price', 'description', 'product_image', 'category')
