@@ -4,7 +4,7 @@ from ecoproductstoreapi.models import User
 
 @api_view(['POST'])
 def check_user(request):
-    '''Checks to see if User has Associated Gamer
+    '''Checks to see if User has Associated user in back end
 
     Method arguments:
       request -- The full HTTP request object
