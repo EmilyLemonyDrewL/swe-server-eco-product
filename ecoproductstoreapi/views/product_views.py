@@ -56,7 +56,7 @@ class ProductView(ViewSet):
         serializer = ProductSerializer(product)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
-    def destroy (self, request, pk=None):
+    def destroy (self, request, pk):
         product = Product.objects.get(pk=pk)
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
