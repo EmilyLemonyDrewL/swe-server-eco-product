@@ -1,0 +1,10 @@
+[
+  {
+      "model": "ecoproductstoreapi.user",
+      "pk": 1,
+      "fields": {
+          "uid": 1,
+          "name": "User1"
+      }
+  }
+]
