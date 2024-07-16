@@ -1,0 +1,110 @@
+[
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 1,
+    "fields": {
+      "name": " 380Compostable Disposable Forks, Knives, and Spoons.",
+      "price": 57.99,
+      "description": "100% Compostable Forks Spoons and Knives - 380 Piece Eco Cutlery Combo Set - Eco Friendly Alternative to Plastic Silverware",
+      "product_image": "https://www.google.com/aclk?sa=l&ai=DChcSEwjS66rlnKqHAxUDXP8BHfK2BRIYABADGgJtZA&ase=2&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcoclgeO2yjRf_CNM3ipPmkWUktUir6pDYTFUEW4tUiayt9VwgXy5MaAoeMEALw_wcB&sig=AOD64_2qOLSAvdcyF5rC3orWaGDOdBzhmw&ctype=5&q=&nis=4&ved=2ahUKEwi4jaXlnKqHAxWfhIkEHfflC3wQ9aACKAB6BAgFEBg&adurl=",
+      "category": 1,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 2,
+    "fields": {
+      "name": "Compostable Disposable Coffee Cups",
+      "price": 20.99,
+      "description": "100% Compostable Disposable Coffee Cups [16oz 80 Pack] Paper Cups Made from Bamboo, Eco-Friendly, Biodegradable Premium Party Cups, Natural Unbleached by Earth's Natural Alternative",
+      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCY3e_GZVWV9bIvL0UTKPjepUiqWMSJN778GfGiu2bUO370p27S4QQsShcQ7XfbS3jjy9Y86k0D4bocd4TLRDHNOktQP_R64foxmGToNgs2FkyuvbmlNL0fQvl",
+      "category": 1,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 3,
+    "fields": {
+      "name": "20 Grove Co. 100% Recycled Plastic Trash Bags",
+      "price": 6.99,
+      "description": "Made from %100 recycylable plastics, let your trash become ours",
+      "product_image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQr6Li6DQeNaBkJzjJVlAmKYl8pJpzVXDzUbx_3H88MOGDZEI2XuqNGmw_lZxo9dl_zKwRWpWzOMjRQgkVA9kDI08SviGo5PZa3fWBLLjHmW4LLBBp9cllGKHo",
+      "category": 1,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 4,
+    "fields": {
+      "name": "18ct Grove Tree-Free TeePee",
+      "price": 21.99,
+      "description": "Toilet paper made completely recycled materials",
+      "product_image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS0bT-QYAu4QKLZTynEcHzX0vHiuj3mqwFw1UdGvBzjTV_w4BKvk-YPjD7ZVPgyEutq-XhU9rYcjfOgY2oy7qtWt-DSPfGts0-1cjQ0MCdSQMOB6SnoKDPYjt-H_lgWJlEMZHn4ng&usqp=CAchttps://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS0bT-QYAu4QKLZTynEcHzX0vHiuj3mqwFw1UdGvBzjTV_w4BKvk-YPjD7ZVPgyEutq-XhU9rYcjfOgY2oy7qtWt-DSPfGts0-1cjQ0MCdSQMOB6SnoKDPYjt-H_lgWJlEMZHn4ng&usqp=CAc",
+      "category": 2,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 5,
+    "fields": {
+      "name": "Dr. Bonners Hemp Soap",
+      "price": 7.29,
+      "description": "Dr. Bronner's Magic Soaps Hemp Peppermint Pure-Castile Soap",
+      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSfNlViYvssBIvyH7-jmFbprNIAWITpM59db-Nxx84MxMYQWHnF9jczWir1RKFDKtte1uPsqhUcSVkiODwsMqwCZvh0Bq3iFdtrolcY8csREErcWm2Gys1fEg",
+      "category": 2,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 6,
+    "fields": {
+      "name": "Organic towels",
+      "price": 14.99,
+      "description": "Organic Cotton Bath Towel in Bone | Made in Turkey | Parachute",
+      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSjC8Tfqb6irEJ2dTe6IP0rePd6rfx_HahdkxhVBNyoQ6UTeMEtBhFYuIwwDXqfW-u-_RwXrG7bnmSIj6OCh3TRjI-68JP454xJtr2_JdKw-PbOos9nMDf5Q90f",
+      "category": 2,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 7,
+    "fields": {
+      "name": "Eco-Friendly Biodegradable Bamboo Dog Bowl",
+      "price": 17.99,
+      "description": "This pairs of eco-friendly bowls is %100 made from recycled materials and bamboo",
+      "product_image": "",
+      "category": 3,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 8,
+    "fields": {
+      "name": "Naturepedic Organic Pet Bed",
+      "price": 109.99,
+      "description": "Made from %100 recycylable sheep",
+      "product_image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRV9VOKEZ4c1Aq9hjwo1VxU3ZLBq5-FANFyPFM2F-qheUxLL9RtbeqG6JxobOKYFpRWRZeC7dLBXr4X8R8NINbzVaQX4fAlX457d6Tzb65TIA",
+      "category": 3,
+      "quantity": 0
+    }
+  },
+  {
+    "model": "ecoproductstoreapi.product",
+    "pk": 9,
+    "fields": {
+      "name": "540 Eco-Friendly Waste Bags",
+      "price": 15.99,
+      "description": "%100 compostable and (if you want) reusable poop bags.",
+      "product_image": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiq7Zm1kaqHAxUebn8AHRKuCcYYABAIGgJvYQ&ase=2&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrdW9AZQM-dpxNPG5VwNHUc_w1znJqxVvr6p7fQn32NNIyTuzQ6IJZ0aAomAEALw_wcB&ohost=www.google.com&cid=CAESVuD2skHfnd5RiR9Ybk9BPu0mpYNYllSkzOoKN8wPA0Rf7odsW30aR9nfDp4Giqh80MiQ3UDHhxiMFlRrhCc5HVFK35jTe24q__NqSEiJv2nqRjkgtT9z&sig=AOD64_26oYZaer7XDhkZOP621pQQOfiIDw&ctype=5&q=&nis=4&ved=2ahUKEwj53ZK1kaqHAxWqzckDHfnPBU8Q9aACKAB6BAgBEDE&adurl=",
+      "category": 3,
+      "quantity": 0
+    }
+  }
+]
