@@ -4,7 +4,7 @@ from ecoproductstoreapi.models import User
 
 @api_view(['POST'])
 def check_user(request):
-    '''Checks to see if User has Associated user in back end
+    '''Checks to see if User has Associated Gamer
 
     Method arguments:
       request -- The full HTTP request object
@@ -24,6 +24,29 @@ def check_user(request):
         }
         return Response(data)
     else:
-        # This is in case the user login auth is not working
+        # Bad login details were provided. So we can't log the user in.
         data = { 'valid': False }
         return Response(data)
+
+
+@api_view(['POST'])
+def register_user(request):
+    '''Handles the creation of a new gamer for authentication
+
+    Method arguments:
+      request -- The full HTTP request object
+    '''
+
+    # Now save the user info in the levelupapi_gamer table
+    user = User.objects.create(
+        name=request.data['name'],
+        uid=request.data['uid']
+    )
+
+    # Return the gamer info to the client
+    data = {
+        'id': user.id,
+        'uid': user.uid,
+        'name': user.name
+    }
+    return Response(data)
