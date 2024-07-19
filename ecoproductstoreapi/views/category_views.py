@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from ecoproductstoreapi.models import Category
+from ecoproductstoreapi.models import Category, Product
 
 class CategoryView(ViewSet):
 
@@ -26,7 +26,13 @@ class CategoryView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ('id', 'name', 'price', 'description', 'product_image', 'quantity', 'category')
+
 class CategorySerializer(serializers.ModelSerializer):
+    products = ProductSerializer(many=True, read_only=True)
     class Meta:
         model = Category
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'products')

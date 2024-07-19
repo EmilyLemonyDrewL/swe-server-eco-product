@@ -13,7 +13,11 @@ class ProductView(ViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list (self, request):
-        products = Product.objects.all()
+        category_id = request.query_params.get('category', None)
+        if category_id is not None:
+            products = Product.objects.filter(category_id=category_id)
+        else:
+            products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
