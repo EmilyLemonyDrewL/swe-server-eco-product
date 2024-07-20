@@ -19,19 +19,21 @@ class CartView(ViewSet):
       
     def create(self, request):
             
-        products = Product.objects.get(uid=request.data["productId"])
+        product = Product.objects.get(pk=request.data["product"])
         user = User.objects.get(pk=request.data["user"])
 
         cart = Cart.objects.create(
-            products=products,
-            user_id=user,
+            product=product,
+            user=user,
             total=request.data["total"],
         )
         serializer = CartSerializer(cart)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
+
 class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
-        fields = ('products', 'user_id', 'total')
+        fields = ('id','product', 'user', 'total')
+        depth= 1
