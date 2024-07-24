@@ -7,14 +7,14 @@ from ecoproductstoreapi.models import Cart, Product, User
 class CartView(ViewSet):
 
     def retrieve(self, request, pk):
-        cart_view = Cart.objects.get(pk=pk)
-        serializer = CartSerializer(cart_view)
+        cart = Cart.objects.get(pk=pk)
+        serializer = CartSerializer(cart)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
     def list(self, request):
-        cart_views = Cart.objects.all()
-        serializer = CartSerializer(cart_views, many=True)
+        carts = Cart.objects.all()
+        serializer = CartSerializer(carts, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
       
     def create(self, request):
@@ -26,14 +26,31 @@ class CartView(ViewSet):
             product=product,
             user=user,
             total=request.data["total"],
+            quantity=request.data.get("quantity", 1)
         )
         serializer = CartSerializer(cart)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+      
+    def update(self, request, pk):
+        product = Product.objects.get(pk=request.data["product"])
+        user = User.objects.get(pk=request.data["user"])
+        
+        cart = Cart.objects.get(pk=pk)
+        cart.total = request.data["total"]
+        cart.quantity = request.data["quantity"]
+        cart.user = user
+        cart.product = product
+        cart.save()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
+    def destroy(self, request, pk):
+        cart = Cart.objects.get(pk=pk)
+        cart.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
-        fields = ('id','product', 'user', 'total')
+        fields = ('id','product', 'user', 'total', 'quantity')
         depth= 1
