@@ -13,20 +13,7 @@ https://www.figma.com/board/AdcvPXGCvveKq5DKfSnKYd/SWE-ECO-PRODUCTS?node-id=0-1&
 [![Postman API Docs](https://img.shields.io/badge/Postman-API%20Docs-orange)](https://documenter.getpostman.com/view/28146601/2sA3kYhzPd
 )
 
-<div class="postman-run-button"
-data-postman-action="collection/fork"
-data-postman-visibility="public"
-data-postman-var-1="29723472-d783b8ff-7cad-4473-98b2-76f9b279b04e"
-data-postman-collection-url="entityId=29723472-d783b8ff-7cad-4473-98b2-76f9b279b04e&entityType=collection&workspaceId=abc6d6b6-fee2-4419-bf78-872ed7392cf5"></div>
-<script type="text/javascript">
-  (function (p,o,s,t,m,a,n) {
-    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
-      (n = o.createElement("script")),
-      (n.id = s+t), (n.async = 1), (n.src = m), n
-    ));
-  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-</script>
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/29723472-d783b8ff-7cad-4473-98b2-76f9b279b04e?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D29723472-d783b8ff-7cad-4473-98b2-76f9b279b04e%26entityType%3Dcollection%26workspaceId%3Dabc6d6b6-fee2-4419-bf78-872ed7392cf5)
 
 ## Tech Stack
 - **Python**
