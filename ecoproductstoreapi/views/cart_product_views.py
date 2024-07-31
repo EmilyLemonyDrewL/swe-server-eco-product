@@ -49,7 +49,7 @@ class CartProductView(ViewSet):
         return Response('Cart product deleted', status=status.HTTP_204_NO_CONTENT)
 
 
-class OrderItemSerializer(serializers.ModelSerializer):
+class CartProductSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrderItem
+        model = CartProducts
         fields = ('id', 'cart', 'product')
