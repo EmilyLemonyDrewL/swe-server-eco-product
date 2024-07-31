@@ -3,10 +3,10 @@
     "model": "ecoproductstoreapi.product",
     "pk": 1,
     "fields": {
-      "name": " 380Compostable Disposable Forks, Knives, and Spoons.",
+      "name": " 300 Compostable Disposable Forks, Knives, and Spoons.",
       "price": 57.99,
       "description": "100% Compostable Forks Spoons and Knives - 380 Piece Eco Cutlery Combo Set - Eco Friendly Alternative to Plastic Silverware",
-      "product_image": "https://www.google.com/aclk?sa=l&ai=DChcSEwjS66rlnKqHAxUDXP8BHfK2BRIYABADGgJtZA&ase=2&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcoclgeO2yjRf_CNM3ipPmkWUktUir6pDYTFUEW4tUiayt9VwgXy5MaAoeMEALw_wcB&sig=AOD64_2qOLSAvdcyF5rC3orWaGDOdBzhmw&ctype=5&q=&nis=4&ved=2ahUKEwi4jaXlnKqHAxWfhIkEHfflC3wQ9aACKAB6BAgFEBg&adurl=",
+      "product_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQUUJHthAp3fNOOjJ_e8H7YAkJ5pqRvocCJyHnjM22IxSPL0teirBSXhqYBC-qmrMtNvj7rJmT9CSWOg8OU84GC-8-SSoRcra4SHWFwpSrBX8RTBrewyUatd6G8x1VZ&usqp=CAc",
       "category": 1,
       "quantity": 0
     }
@@ -78,7 +78,7 @@
       "name": "Eco-Friendly Biodegradable Bamboo Dog Bowl",
       "price": 17.99,
       "description": "This pairs of eco-friendly bowls is %100 made from recycled materials and bamboo",
-      "product_image": "",
+      "product_image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRT5f6Uu2modMuLVGaQ3W2jhHkMF0q0lXC3r6QTBvLzTkNrwqWrUrqGyaAfK3UEt_tAAFMMZ6JE98Tn_5CQOWzdp9KFTd1JaYs4msoWgd6vO18-KRJajx8_mRGuu0Snog&usqp=CAc",
       "category": 3,
       "quantity": 0
     }
@@ -102,7 +102,7 @@
       "name": "540 Eco-Friendly Waste Bags",
       "price": 15.99,
       "description": "%100 compostable and (if you want) reusable poop bags.",
-      "product_image": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiq7Zm1kaqHAxUebn8AHRKuCcYYABAIGgJvYQ&ase=2&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrdW9AZQM-dpxNPG5VwNHUc_w1znJqxVvr6p7fQn32NNIyTuzQ6IJZ0aAomAEALw_wcB&ohost=www.google.com&cid=CAESVuD2skHfnd5RiR9Ybk9BPu0mpYNYllSkzOoKN8wPA0Rf7odsW30aR9nfDp4Giqh80MiQ3UDHhxiMFlRrhCc5HVFK35jTe24q__NqSEiJv2nqRjkgtT9z&sig=AOD64_26oYZaer7XDhkZOP621pQQOfiIDw&ctype=5&q=&nis=4&ved=2ahUKEwj53ZK1kaqHAxWqzckDHfnPBU8Q9aACKAB6BAgBEDE&adurl=",
+      "product_image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLfdBKCLnKa51scMySiHBUOJ6ztD_QDRPFVX9mhvEcsfgW6IBDSfSI3aiHeKQSBLdXJuShDyiFevrCHiM-R2RXNSFpwKQ8a2ahbvKSVhJuEALyx2hohPGxV0a51AJVclMhWnlCRXU&usqp=CAc",
       "category": 3,
       "quantity": 0
     }
