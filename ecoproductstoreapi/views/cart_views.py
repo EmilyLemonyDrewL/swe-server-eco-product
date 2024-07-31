@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from ecoproductstoreapi.models import Cart, Product, User
+from ecoproductstoreapi.models import Cart, User
 
 class CartView(ViewSet):
 
@@ -18,28 +18,22 @@ class CartView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
       
     def create(self, request):
-            
-        product = Product.objects.get(pk=request.data["product"])
+        
         user = User.objects.get(pk=request.data["user"])
 
         cart = Cart.objects.create(
-            product=product,
             user=user,
             total=request.data["total"],
-            quantity=request.data.get("quantity", 1)
+            
         )
         serializer = CartSerializer(cart)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
       
     def update(self, request, pk):
-        product = Product.objects.get(pk=request.data["product"])
         user = User.objects.get(pk=request.data["user"])
-        
         cart = Cart.objects.get(pk=pk)
         cart.total = request.data["total"]
-        cart.quantity = request.data["quantity"]
         cart.user = user
-        cart.product = product
         cart.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
@@ -52,5 +46,5 @@ class CartView(ViewSet):
 class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
-        fields = ('id','product', 'user', 'total', 'quantity')
+        fields = ('id','user', 'total')
         depth= 1
