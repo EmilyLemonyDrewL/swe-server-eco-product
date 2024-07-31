@@ -17,13 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from ecoproductstoreapi.views import ProductView, CategoryView, CartView, check_user, register_user
+from ecoproductstoreapi.views import ProductView, CategoryView, CartView, CartProductView, check_user, register_user
 
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'products', ProductView, 'product')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'carts', CartView, 'cart')
+router.register(r'cartproducts', CartProductView, 'cartproduct')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
