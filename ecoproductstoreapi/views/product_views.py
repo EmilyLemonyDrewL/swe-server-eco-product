@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework import serializers, status
 from ecoproductstoreapi.models import Product, Category
+from .category_views import CategorySerializer
 
 class ProductView(ViewSet):
     
@@ -72,8 +73,7 @@ class ProductView(ViewSet):
         product.save()
         return Response({'joined': product.joined}, status=status.HTTP_200_OK)
 
-        
-    
+
     @action(methods=['get'], detail=False)
     def by_category(self, request):
         category = request.query_params.get('category', None)
@@ -81,8 +81,8 @@ class ProductView(ViewSet):
             products = Product.objects.filter(category=category)
             serializer = ProductSerializer(products, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
-    
 class ProductSerializer(serializers.ModelSerializer):
+    category = CategorySerializer(read_only=True)
     class Meta:
         model = Product
         fields = ('id', 'name', 'price', 'description', 'product_image', 'category')
