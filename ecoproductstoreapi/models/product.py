@@ -7,7 +7,6 @@ class Product(models.Model):
     description = models.TextField(max_length=250)
     product_image = models.CharField(max_length=1000)
     category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='products')
-    quantity = models.PositiveIntegerField(default=0)
 
     @property
     def joined(self):
