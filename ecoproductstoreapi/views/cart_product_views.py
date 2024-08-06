@@ -24,7 +24,8 @@ class CartProductView(ViewSet):
 
         cart_product = CartProducts.objects.create(
             cart=cart,
-            product=product
+            product=product,
+            quantity=request.data["quantity"],
         )
 
         serializer = CartProductSerializer(cart_product)
@@ -34,9 +35,11 @@ class CartProductView(ViewSet):
         cart_product = CartProducts.objects.get(pk=pk)
         cart = Cart.objects.get(pk=request.data['cartId'])
         product = Product.objects.get(pk=request.data['productId'])
+        cart_product.quantity = request.data["quantity"]
 
         cart_product.cart = cart
         cart_product.product = product
+        
 
         cart_product.save()
         serializer = CartProductSerializer(cart_product)
@@ -52,4 +55,4 @@ class CartProductView(ViewSet):
 class CartProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = CartProducts
-        fields = ('id', 'cart', 'product')
+        fields = ('id', 'cart', 'product', 'quantity')
