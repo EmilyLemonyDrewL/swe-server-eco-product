@@ -29,7 +29,7 @@ class CategoryView(ViewSet):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ('id', 'name', 'price', 'description', 'product_image', 'quantity', 'category')
+        fields = ('id', 'name', 'price', 'description', 'product_image', 'category')
 
 class CategorySerializer(serializers.ModelSerializer):
     products = ProductSerializer(many=True, read_only=True)
